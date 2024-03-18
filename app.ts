@@ -1,4 +1,4 @@
-class Account {
+abstract class Account {
     name: string;
     accountNumber: number;
     balance: number = 0;
@@ -30,6 +30,6 @@ class PeopleAccount extends Account {
     }
 }
 
-const person1 = new PeopleAccount(3883, 'Gabriel', 3);
+const person1: PeopleAccount = new PeopleAccount(3883, 'Gabriel', 3);
 
 console.log(person1);
